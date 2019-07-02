@@ -7,7 +7,7 @@ package ACP;
 
 /**
  * 
- * @author willnelson
+ * @author PMPAdmin
  */
 public class Balance implements BankingInterface {
     

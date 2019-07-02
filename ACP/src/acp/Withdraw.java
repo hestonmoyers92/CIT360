@@ -13,7 +13,7 @@ public class Withdraw implements BankingInterface{
     
     public double bank(double balance, double amount) {
 		System.out.println("You have withdrawn $" + amount + ".");
-                System.out.println("Don't spend it all in one place.");
+                System.out.println("Spend your money wisely.");
 		return balance-amount;
 	}
     

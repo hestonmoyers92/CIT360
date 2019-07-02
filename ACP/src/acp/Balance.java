@@ -14,7 +14,7 @@ public class Balance implements BankingInterface {
     public double bank(double balance, double amount) {
         
 		System.out.println("Your balance is $" + balance + ".");
-                System.out.println("Have you considered a second job?  We're hiring!");
+                System.out.println("Lower than you thought?  I know the feeling!");
 		return balance;
 	}	
     

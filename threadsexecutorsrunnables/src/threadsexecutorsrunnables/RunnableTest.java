@@ -7,7 +7,7 @@ package threadsexecutorsrunnables;
 
 /**
  *
- * @author seth
+ * @author PMPAdmin
  */
 public class RunnableTest implements Runnable {
 

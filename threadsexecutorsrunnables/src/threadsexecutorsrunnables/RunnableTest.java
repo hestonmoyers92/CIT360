@@ -14,7 +14,7 @@ public class RunnableTest implements Runnable {
           public static String runnableMaybe;
     public void test(){
         for(int grade=1;grade<=10;grade++){
-            System.out.println(Thread.currentThread().getName()+" got number "+ grade +" right ");
+            System.out.println(Thread.currentThread().getName()+"  "+ grade +" correct ");
             boolean ifPassed = this.ifPassed(grade);
             if(ifPassed){
                 break;
@@ -26,7 +26,7 @@ public class RunnableTest implements Runnable {
         if((RunnableTest.runnableMaybe==null)&&(pass==10)){
             String passName=Thread.currentThread().getName();
             RunnableTest.runnableMaybe=passName;
-            System.out.println("You passed!");
+            System.out.println("Nice Job!");
             ifPassed=true;
         }
         else if(RunnableTest.runnableMaybe==null){

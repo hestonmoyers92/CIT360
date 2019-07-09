@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 
 /**
  *
- * @PMPAdmin
+ * @author PMPAdmin
  */
 
 public class threadPool {
@@ -19,16 +19,16 @@ public class threadPool {
 	public static void main(String[] args) {
 		Executor anExecutor = Executors.newCachedThreadPool();
 		for(int threadCnt = 0; threadCnt < 3; threadCnt++){
-			RunnableExample SimpleRunnable = 
-            new RunnableExample();
+			RunnableTest SimpleRunnable = 
+            new RunnableTest();
 			anExecutor.execute(SimpleRunnable);
 		}
 		try {
 			Thread.sleep(3000);
-			System.out.println("Wake Up!");
+			System.out.println("Hello!");
 			for(int threadCnt = 0; threadCnt < 3; threadCnt++){
-				RunnableExample simpleRunnable = 
-                new RunnableExample();
+				RunnableTest simpleRunnable = 
+                new RunnableTest();
 				anExecutor.execute(simpleRunnable);
 			}
 		} catch (InterruptedException e) {

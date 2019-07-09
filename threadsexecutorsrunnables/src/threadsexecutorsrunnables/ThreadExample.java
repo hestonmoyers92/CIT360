@@ -7,7 +7,7 @@ package threadsexecutorsrunnables;
 
 /**
  *
- * @PMPAdmin
+ * @author PMPAdmin
  */
 public class ThreadExample {
 	

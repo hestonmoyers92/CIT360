@@ -7,14 +7,14 @@ package threadsexecutorsrunnables;
 
 /**
  *
- * @PMPAdmin
+ * @author seth
  */
-public class RunnableExample implements Runnable {
+public class RunnableTest implements Runnable {
 
-          public static String runnable;
+          public static String runnableMaybe;
     public void test(){
         for(int grade=1;grade<=10;grade++){
-            System.out.println(Thread.currentThread().getName()+" Question Number "+ grade +" Is Correct ");
+            System.out.println(Thread.currentThread().getName()+" got number "+ grade +" right ");
             boolean ifPassed = this.ifPassed(grade);
             if(ifPassed){
                 break;
@@ -23,16 +23,16 @@ public class RunnableExample implements Runnable {
     }
     private boolean ifPassed(int pass){
         boolean ifPassed = false;
-        if((RunnableExample.runnable==null)&&(pass==10)){
+        if((RunnableTest.runnableMaybe==null)&&(pass==10)){
             String passName=Thread.currentThread().getName();
-            RunnableExample.runnable=passName;
-            System.out.println("Great Job!!!");
+            RunnableTest.runnableMaybe=passName;
+            System.out.println("You passed!");
             ifPassed=true;
         }
-        else if(RunnableExample.runnable==null){
+        else if(RunnableTest.runnableMaybe==null){
             ifPassed=false;
         }
-        else if(RunnableExample.runnable==null){
+        else if(RunnableTest.runnableMaybe==null){
             ifPassed=true;
         }
         return ifPassed;

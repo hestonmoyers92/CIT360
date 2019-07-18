@@ -13,8 +13,7 @@ public abstract class Board
 	
 	private int dealerTotalPoints = 0;
 	
-	// dealerStopsAt represents the standard casino dealer rule,
-	// which states that the dealer stands when he has 17 or more.
+	
 	private final static int dealerStopsAt = 17;
 
 	private Deck deck;
@@ -98,8 +97,7 @@ public abstract class Board
 		}
 	}
 	
-	// This algorithm takes into account whether an ace card should
-	// have a point value of 1 or 11, depending on the rest of your hand.
+	
 	public int calculateTotalPoints(List<Card> cards)
 	{
 		int total1 = 0;
@@ -227,8 +225,7 @@ public abstract class Board
 		return false;
 	}
 	
-	// This is called by the initDisplay method in the GUI class.
-	// This method deals two cards to both the dealer and the player.
+	
 	private void dealMyCards() 
 	{
 		for (int k = 0; k < 2; k++) 
